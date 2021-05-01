@@ -291,7 +291,7 @@ a {
 .search-input::placeholder {
   color: #000000;
   padding-bottom: 16px;
-  badding-top: 16px;
+  padding-top: 16px;
   opacity: 0.54;
 }
 
