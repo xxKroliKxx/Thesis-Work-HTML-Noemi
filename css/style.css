@@ -796,8 +796,16 @@ a {
 }
 
 @media (max-width: 640px) {
+  .shop {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .product_offer {
     flex-direction: column;
+    align-items: center;
   }
 
   .offer:nth-child(n + 2) {
