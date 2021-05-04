@@ -475,7 +475,6 @@ a {
   margin-left: 120px;
 }
 
-
 .aside-section:nth-child(1n + 2) {
   margin-top: 60px;
 }
@@ -700,16 +699,16 @@ a {
     margin-left: 0;
   }
 
-  .aside-section{
+  .aside-section {
     margin-top: 0;
   }
-  
+
   .aside-title {
     margin-top: 44px;
   }
 
-  .search{
-    margin-top: 60px; 
+  .search {
+    margin-top: 60px;
   }
 
   .aside-teg-item {
@@ -801,7 +800,7 @@ a {
     flex-direction: column;
   }
 
-  .offer:nth-child(n+2){
+  .offer:nth-child(n + 2) {
     margin-top: 24px;
   }
 
@@ -825,7 +824,6 @@ a {
   .footer {
     margin-top: 47px;
   }
-
 }
 
 .footer-social {
