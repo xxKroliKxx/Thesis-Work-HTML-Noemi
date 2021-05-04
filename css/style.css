@@ -445,14 +445,20 @@ a {
     margin-left: 15px;
     margin-right: 15px;
   }
+  
   .main-post {
     flex-direction: column;
-    margin-bottom: 4px;
+    border-bottom: 4px solid #eeeeee;
+
+    margin-bottom: 0px;
+    padding-bottom: 24px;
     padding-top: 34px;
   }
+
   .main-post-picture {
     width: 100%;
   }
+
   .post-description {
     padding-top: 15px;
   }
@@ -460,9 +466,11 @@ a {
   .teg-item {
     margin-right: 20px;
   }
+
   .post-title {
     margin-top: 15px;
   }
+
   .date-and-author {
     margin-top: 23px;
     margin-bottom: 20px;
