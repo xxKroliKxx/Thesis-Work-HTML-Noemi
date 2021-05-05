@@ -956,11 +956,10 @@ a {
 }
 
 .offer {
-  width: calc(25% - 57px);
+  width: calc(33% - 57px);
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  flex: 1;
 }
 
 .offer__title {
