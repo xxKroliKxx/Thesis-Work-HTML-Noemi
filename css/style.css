@@ -50,10 +50,11 @@ a {
 }
 
 .header {
-  padding-top: 0px;
+  padding-top: 34px;
+  padding-bottom: 146px;
   position: relative;
   width: 100%;
-
+  
   background-image: url("../images/banner/banner-bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -91,15 +92,14 @@ a {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .banner {
-  padding-top: 34px;
-  padding-left: 15px;
-  padding-right: 15px;
-
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -137,7 +137,7 @@ a {
   margin-top: 126px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 146px;
+
   box-sizing: border-box;
   width: 60%;
 
@@ -159,22 +159,26 @@ a {
     display: none;
   }
 
+  .header{
+    padding-top: 225px;
+    padding-bottom: 216px;
+    position: relative;
+    width: 100%;
+  }
+
   .banner {
     flex-direction: column;
-    padding-top: 0px;
-    position: relative;
+    /*position: relative;*/
   }
 
   .title {
     width: 77%;
     font-size: 26px;
     margin-top: 37px;
-    padding-bottom: 216px;
   }
 
   .logo {
     width: 270px;
-    margin-top: 225px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -184,6 +188,7 @@ a {
     height: 1em;
     border: none;
     padding: 0;
+    margin-bottom: 180px;
 
     right: 15px;
     top: 30px;
@@ -344,13 +349,19 @@ a {
 
 .trend {
   width: calc(25% - 3px);
-  height: 319px;
+  min-height: 319px;
+  padding-bottom: 18px;
 
   position: relative;
 
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   z-index: 0;
+
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
 }
 
 @media (min-width: 1200px) {
@@ -361,6 +372,10 @@ a {
   .trend:nth-child(n + 5) {
     margin-top: 4px;
   }
+}
+
+.trend:last-child {
+  margin-right: 0;
 }
 
 .trend:after {
@@ -379,7 +394,6 @@ a {
   outline: 3px solid #b59f5b;
 
   width: 88%;
-  position: absolute;
   bottom: 20px;
 
   margin-left: 21px;
@@ -387,15 +401,11 @@ a {
 
   padding-bottom: 31px;
   padding-top: 38px;
-}
-
-.trend__tegs {
-  margin-left: 34px;
+  padding-left: 32px;
 }
 
 .trend__title {
   margin-top: 10px;
-  margin-left: 32px;
 }
 
 .trend__title > a {
@@ -412,7 +422,7 @@ a {
   }
 
   .trend {
-    height: 230px;
+    min-height: 230px;
     width: 100%;
   }
 
@@ -428,15 +438,17 @@ a {
 
     padding-bottom: 25px;
     padding-top: 32px;
+    padding-left: 18px;
   }
 
   .trend__tegs {
-    margin-left: 20px;
+    padding-left: 2px;
+    /*margin-left: 20px;*/
   }
 
   .trend__title {
     margin-top: 15px;
-    margin-left: 18px;
+    /*margin-left: 18px;*/
     margin-right: 2px;
   }
 }
@@ -467,15 +479,11 @@ a {
 
     padding-bottom: 29px;
     padding-top: 36px;
-  }
-
-  .trend__tegs {
-    margin-left: 20px;
+    padding-left: 18px;
   }
 
   .trend__title {
     margin-top: 15px;
-    margin-left: 18px;
     margin-right: 2px;
   }
 }
@@ -508,7 +516,6 @@ a {
 .main-post-picture {
   display: block;
   margin-right: 30px;
-  margin-bottom: auto;
   width: 381px;
 }
 
@@ -551,7 +558,7 @@ a {
 }
 
 .date {
-  padding-right: 13px;
+  margin-right: 13px;
   color: #888888;
   font-size: 12px;
 }
@@ -566,10 +573,6 @@ a {
   margin-top: 15px;
   color: #0f0d0e;
   font-size: 15px;
-}
-
-.date-and-author + .description {
-  margin-top: 0px;
 }
 
 @media (max-width: 640px) {
@@ -664,7 +667,6 @@ a {
 
 .aside {
   width: 272px;
-  margin-bottom: auto;
   margin-left: 120px;
 }
 
@@ -707,6 +709,10 @@ a {
 .new-post {
   margin-bottom: 21px;
   display: flex;
+}
+
+.new-post-description > .date{
+  margin-right: 0;
 }
 
 .new-post-picture {
@@ -861,7 +867,6 @@ a {
 .themes-item {
   display: block;
   width: 100%;
-  margin-left: 2px;
   border-bottom: 1px solid #eeeeee;
   padding-top: 18px;
   padding-bottom: 14px;
@@ -1091,13 +1096,14 @@ a {
 }
 
 .footer {
-  width: 100%;
-
+  max-width: 1200px;
+  
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 40px;
 }
 
 .footer-social {
@@ -1142,7 +1148,9 @@ a {
   color: #999999;
   font-size: 12px;
   font-weight: bold;
-  margin: 73px auto 40px;
+  margin-top: 73px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 640px) {
@@ -1222,21 +1230,18 @@ a {
 }
 
 .popup {
-  position: absolute;
-  top: 235px;
+  position: fixed;
+  top: 100px;
   right: 50%;
   transform: translate(50%, 0);
   max-width: 390px;
 
   background: #fff;
   z-index: 99999;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 30px;
 }
 
 .page-msg {
-  display: block;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -1261,8 +1266,6 @@ a {
 
 .form {
   margin-top: 28px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .form__group {
@@ -1306,7 +1309,7 @@ a {
   padding-left: 18px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url(/svg/form-arrows.svg);
+  background-image: url("../svg/form-arrows.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -1351,8 +1354,7 @@ a {
   width: 100%;
   height: 130px;
   resize: none;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px;
   text-align: left;
 }
 
