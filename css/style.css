@@ -1317,7 +1317,7 @@ a {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("/svg/form-empty-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
@@ -1337,7 +1337,7 @@ a {
 }
 
 .radio:checked ~ .radio-group-text::before {
-  background-image: url("/svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 .radio {
