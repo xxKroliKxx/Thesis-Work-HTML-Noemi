@@ -1205,23 +1205,11 @@ a {
   background-image: url("../images/trend/trend5.jpg");
 }
 
-.popup {
+.popup__background{
   display: none;
-
-  position: absolute;
-  top: 237px;
-  right: 50%;
-  transform: translate(50%, 0);
-  max-width: 390px;
-
-  background: #fff;
-  z-index: 99999;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .popup__background:before {
-  display: none;
   content: "";
   background: #000000;
   position: fixed;
@@ -1231,6 +1219,19 @@ a {
   height: 100%;
   opacity: 0.6;
   z-index: 9999;
+}
+
+.popup {
+  position: absolute;
+  top: 235px;
+  right: 50%;
+  transform: translate(50%, 0);
+  max-width: 390px;
+
+  background: #fff;
+  z-index: 99999;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .page-msg {
@@ -1353,6 +1354,35 @@ a {
   padding-left: 20px;
   padding-top: 20px;
   text-align: left;
+}
+
+.close__form{
+  position: absolute;
+
+  height: 28px;
+  width: 28px;
+
+  background-image: url("../svg/form-x.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  top: -38px;
+  right: 0;
+
+  border: none;
+  font-size: 0;
+}
+
+.close__form:active, 
+.close__form:focus {
+    outline: none;
+}
+
+@media (max-width: 640px) {
+  .popup {
+    width: 91.66%;
+    top: 55px;
+  }
 }
 
 body {
