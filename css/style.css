@@ -915,7 +915,7 @@ a {
   }
 
   .aside-tegs {
-    justify-content: space-around;
+    justify-content: start;
   }
 
   .aside-teg-item {
@@ -964,10 +964,10 @@ a {
 }
 
 .offer {
-  width: calc(33% - 57px);
+  width: 30%;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  align-items: center;
 }
 
 .offer__title {
@@ -975,9 +975,10 @@ a {
 }
 
 .offer__description {
-  outline: 3px solid #b59f5b;
-  outline-offset: 30px;
   flex-grow: 1;
+  border: 3px solid #b59f5b;
+  padding: 30px 15px 20px;
+  margin-top: -30px;
 }
 
 .offer__post__link {
@@ -1032,8 +1033,8 @@ a {
 
     margin-left: 15px;
     margin-right: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .product_offer {
@@ -1048,9 +1049,7 @@ a {
     margin-top: 24px;
   }
 
-  .offer__img {
-    width: 100%;
-  }
+ 
 
   .offer__description {
     outline: none;
@@ -1081,12 +1080,12 @@ a {
     margin-left: 34px;
   }
 
-  .offer:nth-child(n + 3) {
-    margin-top: 24px;
+  .offer:last-child {
+    margin-right: 0;
   }
 
-  .offer__img {
-    width: 100%;
+  .offer:nth-child(n + 3) {
+    margin-top: 24px;
   }
 
   .offer__description {
