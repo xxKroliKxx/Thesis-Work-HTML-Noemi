@@ -520,9 +520,12 @@ a {
   margin-bottom: 0px;
 }
 
+.main-post-picture-div{
+  margin-right: 30px;
+}
+
 .main-post-picture {
   display: block;
-  margin-right: 30px;
   width: 381px;
 }
 
@@ -1077,7 +1080,6 @@ a {
 
   .offer {
     width: calc(50% - 68px);
-    flex-grow: 1;
   }
 
   .offer:nth-child(odd) {
