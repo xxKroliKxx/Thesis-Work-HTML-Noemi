@@ -54,7 +54,7 @@ a {
   padding-bottom: 146px;
   position: relative;
   width: 100%;
-  
+
   background-image: url("../images/banner/banner-bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -159,7 +159,7 @@ a {
     display: none;
   }
 
-  .header{
+  .header {
     padding-top: 225px;
     padding-bottom: 216px;
     position: relative;
@@ -247,7 +247,7 @@ a {
     padding-right: 34px;
   }
 
-  .container{
+  .container {
     padding-left: 0;
     padding-right: 0;
   }
@@ -367,7 +367,7 @@ a {
   z-index: 0;
 
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
@@ -520,7 +520,7 @@ a {
   margin-bottom: 0px;
 }
 
-.main-post-picture-div{
+.main-post-picture-div {
   margin-right: 30px;
 }
 
@@ -721,7 +721,7 @@ a {
   display: flex;
 }
 
-.new-post-description > .date{
+.new-post-description > .date {
   margin-right: 0;
 }
 
@@ -981,6 +981,10 @@ a {
   align-items: center;
 }
 
+.offer__img {
+  width: 100%;
+}
+
 .offer__title {
   margin-top: 25px;
 }
@@ -1060,8 +1064,6 @@ a {
     margin-top: 24px;
   }
 
- 
-
   .offer__description {
     outline: none;
     flex-grow: 1;
@@ -1107,7 +1109,7 @@ a {
 
 .footer {
   max-width: 1200px;
-  
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px;
@@ -1223,7 +1225,7 @@ a {
   background-image: url("../images/trend/trend5.jpg");
 }
 
-.popup__background{
+.popup__background {
   display: none;
 }
 
@@ -1368,7 +1370,7 @@ a {
   text-align: left;
 }
 
-.close__form{
+.close__form {
   position: absolute;
 
   height: 28px;
@@ -1385,9 +1387,9 @@ a {
   font-size: 0;
 }
 
-.close__form:active, 
+.close__form:active,
 .close__form:focus {
-    outline: none;
+  outline: none;
 }
 
 @media (max-width: 640px) {
