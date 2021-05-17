@@ -1101,6 +1101,7 @@ a {
   .offer__description {
     outline: none;
     flex-grow: 1;
+    min-width: 292px;
   }
 }
 
